@@ -1,0 +1,60 @@
+{% extends "header.html" %}
+{% block header %}
+
+<div style="background-color: #C70B30;">
+    <div class="esas">Siz hazırda buradasınız / <a href="/main" style="color: #fff; text-decoration: none;"> Əsas   </a> / {{card.title}}</div>
+</div>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="{{card.image}}" class="d-block w-100" alt="..." style="width: 100%; height: 300px;">
+        <div class="carousel-caption d-none d-md-block" style="margin-bottom: 100px;">
+            <img src="https://www.pashabank.az/templates/images/from_home_a_v_1_01.png" alt="">
+            <div style="display: flex;">
+                <div class="sol-xett"></div>
+                <h5 class="zirve">{{card.title}}</h5>
+                <div class="sag-xett"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="text">{{card.description}}
+
+</div>
+<div class="container sub_container mt-5">
+    <div class="row mb-5">
+        {% for sub in subcard %}
+        <div class="col-3">
+            <div class="card"
+                style="width: 220px; height: 393px; background-image: url('https://www.pashabank.az/templates/images/listing_a_bg.png'); border: 0;">
+                <img src="{{sub.icon}}" class="card-img-top" alt="..."
+                    style="width: 30%; margin: 0 auto; height: 62px; text-align: center;">
+                <div style="padding-right: 10px; padding-left: 10px;">
+                    <h1 style="text-align: center; font-size: 19px; color: #2E2E2E; height: 50px;">{{sub.title}}</h1>
+                </div>
+                <div class="card-body" style="text-align: center;">
+                    <p class="card-text" style="font-size: 14px; line-height: 18px; color: #2E2E2E;">{{sub.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="text">
+    Daha ətraflı məlumat üçün PAŞA Bankın Baş ofisinə, (994 12) 496 50 00 /*9123 nömrəli Əlaqə Mərkəzinə və ya
+    ibd@pashabank.az elektron ünvanına müraciət edə bilərsiniz.
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+{% endblock %}
+</body>
+
+</html>

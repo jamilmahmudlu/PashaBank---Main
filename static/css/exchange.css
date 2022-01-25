@@ -1,0 +1,50 @@
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 350px;
+}
+body{
+    margin: 0 0 0 0;
+}
+
+.exchange_container {       
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.table{
+    margin-left: 0;
+    width: 620px;
+    border-bottom: 1px solid #3ea045;
+    border-left: 1px solid #3ea045;
+    border-right: 1px solid #3ea045;
+    border-collapse: separate;
+}
+
+.table .th{
+    text-align: left;
+    width: 66%;
+    border: 1px solid #ededed;
+    padding-left: 215px; 
+}
+
+.table .th2{
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+    border: 1px solid #ededed;
+    font-weight: bold;
+    border-collapse: collapse;
+}
+
+.table td{
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+    border: 1px solid #ededed;
+    width: 33%;
+    border-collapse: collapse;
+}

@@ -1,0 +1,84 @@
+{% extends "header.html" %}
+{% block header %}
+
+
+<div style="background-color: #C70B30;">
+    <div class="esas">Siz hazırda buradasınız / <a href="/main" style="color: #fff; text-decoration: none;">Əsas</a> / Onlayn növbə</div>
+</div><br>
+<div class="container queue_container">
+    <div class="position-relative">
+        <div class="text-center">
+            <div class="content_content_header">
+                <h1 class="content_content_title" style="font-weight: 900;">Onlayn növbə</h1><br>
+                <h3 class="content_content_subtitle">Filialımıza gələrək növbə gözləmək əvəzinə, "onlayn növbə" götürün
+                    və vaxtınıza qənaət edin.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-img">
+
+    </div>
+    <div class="">
+        {% if active %}
+        <p>Legv edildi</p>
+        {% endif %}
+    </div>
+    <div class="row" style="animation: 500ms ease-out 0s 1 normal forwards running fade-in; justify-content: center;">
+        <div class="col-md-4 col-sm-12  mr-auto">
+            <button class="button_main_mp border_green bg_green border-radius pointer ">
+                <a class="c-white button_main_mp_a" href="/online-queue">Yeni rezervasiya</a>
+                <div>
+                    <div class="button_main_mp_content  border-radius shadow   " style="height: 0px; overflow: hidden;">
+                        <ul class="button_main_mp_content_ul"></ul>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="col-md-4 col-sm-12  ml-auto">
+            <button type="button" class="button_main_mp border_green bg_green border-radius pointer"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a class="c-white button_main_mp_a" href="#">Rezervasiyanın ləğvi</a>
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Onlayn növbə barədə məlumat</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="POST">
+                                {{ form.csrf_token }}
+                                <div class="mb-3">
+                                    {{ form.random_number }}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Təsdiq et</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+{% endblock %}
+</body>
+
+</html>

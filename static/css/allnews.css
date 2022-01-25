@@ -1,0 +1,261 @@
+#content-left {
+    float: left;
+    width: 620px;
+}
+
+#content-left-inner {
+    padding: 2px 0 10px 0;
+    position: relative;
+}
+
+@media screen and (min-width: 992px){
+.press_det_container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+} }
+
+article, aside, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+
+.article-title-date-time {
+    font-size: 23px;
+    line-height: 26px;
+    color: #2e2e2e;
+    /* padding: 0 14px 30px 0; */
+    font-weight: normal;
+    padding-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.article-top {
+    position: relative;
+    height: 51px;
+    color: #626469;
+}
+
+.article-social-plugins {
+    margin-top: 16px;
+    height: 39px;
+}
+
+a.social-plugins-linkedin {
+    display: inline-block;
+    height: 39px;
+    box-sizing: border-box;
+    width: 0;
+    color: #3ea045;
+    text-decoration: none;
+    padding: 6px 25px 11px 15px;
+    background: url(../images/sprited_backgrounds-icon.png) left -236px no-repeat;
+}
+
+a.social-plugins-twitter {
+    display: inline-block;
+    height: 39px;
+    box-sizing: border-box;
+    width: 0;
+    color: #3ea045;
+    text-decoration: none;
+    padding: 6px 25px 11px 15px;
+    background: url(../images/sprited_backgrounds-icon.png) left -328px no-repeat;
+}
+
+a.social-plugins-facebook {
+    display: inline-block;
+    height: 39px;
+    box-sizing: border-box;
+    width: 0;
+    color: #3ea045;
+    text-decoration: none;
+    padding: 6px 25px 11px 15px;
+    background: url(../images/sprited_backgrounds-icon.png) left -422px no-repeat;
+}
+
+.article-print {
+    position: absolute;
+    height: 39px;
+    top: 0;
+    right: 28px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #626469;
+}
+
+a.social-plugins-print {
+    width: 31px;
+    display: inline-block;
+    height: 20px;
+    color: #3ea045;
+    text-decoration: none;
+    padding: 6px 16px 13px 28px;
+    background: url(../images/sprited_backgrounds-icon.png) left -515px no-repeat;
+}
+
+p {
+    padding: 0 0 20px 0;
+}
+
+.article-text img, .content-box img {
+    max-width: 100%;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.social_footer_ul { display:table; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#0A4D12; border:5px solid #FFF; padding:8px; background-color: #FFF;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center; font-size: 20px;}
+.ol-sm-4, .col-md, .col-6, .col{
+	padding-right: 0 !important;
+}
+
+aside#rightBlocks {
+    width: 220px;
+    margin: 42px 20px 17px 0;
+    float: right;
+}
+
+.rightblock {
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d3;
+    border-top: 1px solid #007d57;
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+}
+
+.rightblock-arrow {
+    background: url("https://www.pashabank.az/templates/images/pb-sprites.png") center -44px no-repeat;
+    position: absolute;
+    top: 0;
+    height: 8px;
+    width: 218px;
+}
+
+:link, :visited {
+    text-decoration: none;
+}
+
+.rightblock .news h2 {
+    margin-top: 12px;
+    padding: 0 15px;
+}
+
+.rightblock h2 {
+    color: #626469;
+}
+
+.rightblock .news div {
+    margin: 12px 0 5px 0;
+    padding: 0 15px;
+    color: #626469;
+}
+
+p {
+    padding: 0 0 20px 0;
+}
+
+.rightblock .news div {
+    margin: 12px 0 5px 0;
+    padding: 0 15px;
+    color: #626469;
+}
+
+.rightblock .rightBoxKr {
+    margin-top: 12px;
+    padding: 0 15px;
+    color: #626469;
+}
+
+.rightblock .rightBoxKr h2 {
+    margin-bottom: 12px;
+}
+
+.rates-right-block {
+    background: url("https://www.pashabank.az/templates/images/bg_ritghblock_rates.gif") top center no-repeat;
+    border-top: 1px solid #0a4c13 !important;
+}
+
+.rates-right-block .rightblock-arrow {
+    background: url("https://www.pashabank.az/templates/images/pb-sprites.png") center -482px no-repeat !important;
+}
+
+.rightblock-arrow {
+    background: url(../images/pb-sprites.png) center -44px no-repeat;
+    position: absolute;
+    top: 0;
+    height: 8px;
+    width: 218px;
+}
+
+.rates-right-block h2 {
+    /* background-color: #007d57; */
+    color: #fff;
+    padding: 14px 15px;
+}
+
+.rates-right-block-inner {
+    background: url("https://www.pashabank.az/templates/images/pb-sprites.png") -782px -482px no-repeat;
+    position: relative;
+}
+
+.rates-right-block h3 {
+    color: #626469;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 16px 15px 0 15px;
+}
+
+.currency_top_right {
+    width: 188px;
+    margin-left: 15px;
+    color: #626469;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.currency_top_right th.Sr2 {
+    text-align: right;
+    width: 66px;
+    padding-right: 40px;
+}
+
+.currency_top_right th {
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.social_footer_ul .article-top{
+    position: relative;
+}
+
+.printer{
+    right: -200%;
+}
+
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 238px;
+}

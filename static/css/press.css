@@ -1,0 +1,376 @@
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 238px;
+}
+body{
+    margin: 0 0 0 0;
+}
+
+.press_container {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* _____ */
+
+.search-results{
+    position: relative;
+    height: 148px;
+    background: url('https://www.pashabank.az/templates/images/search_results_bg.gif') left center no-repeat;
+}
+
+.search-notice{
+    margin: 0 0 17px;
+    padding: 13px 20px 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #626469;
+}
+
+.search-results form{
+    padding: 0 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 350px;
+}
+
+.hidden{
+    display: none;
+}
+
+.search-results form input.query {
+    width: calc(100% - 38px);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.query{
+    border: none;
+    position: relative;
+    /* width: 564px; */
+    padding: 11px 8px 15px;
+    /* color: #626469; */
+    background-color: #fff;
+    border-radius: 0;
+    /* margin-left: 20px; */
+}
+
+.search-results .btn{
+    background: url('https://www.pashabank.az/templates/images/search_results_button.gif') no-repeat;
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    border: none;
+    cursor: pointer;
+}
+
+/* _____ */
+
+.news-all-news {
+    padding-top: 25px;
+}
+
+
+.pagination {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 8px 0 16px 0;
+}
+
+b.pagination_numbers {
+    background: url('https://www.pashabank.az/templates/images/news_pagination_bg.gif') 10px -78px no-repeat;
+}
+.pagination b {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px 11px 21px;
+    font-weight: normal;
+}
+
+a.pagination_numbers {
+    color: #3ea045;
+    text-decoration: none;
+    padding: 6px 12px 11px 21px;
+    background: url('https://www.pashabank.az/templates/images/news_pagination_bg.gif') 10px top no-repeat;
+}
+
+a.pagination_right {
+    width: 31px;
+    color: #3ea045;
+    text-decoration: none;
+    padding: 6px 15px 3px 26px;
+    background: url('https://www.pashabank.az/templates/images/news_pagination_right_bg.gif') 10px top no-repeat;
+}
+
+.news-box-news {
+    /* margin-bottom: 18px; */
+    position: relative;
+    border-top: 1px dotted #e9e9e9;
+    padding: 0 15px 0 0;
+}
+
+
+
+.news-box-news a.new-news-box-link {
+    padding-right: 50px;
+}
+a.new-news-box-link {
+    display: block;
+    background-color: #fff;
+    padding: 0 0 29px 30px;
+    /* min-height: 113px; */
+}
+
+.news-news-number {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3ea045;
+}
+
+.news-no-img {
+    padding-left: 24px !important;
+}
+.news-news-txt {
+    padding-left: 154px;
+    position: relative;
+    padding-top: 13px;
+}
+
+.news-date-title {
+    font-size: 16px;
+    line-height: 19px;
+    /* padding: 0 15px; */
+    /* color: #05287f; */
+    /* font-weight: bold; */
+}
+
+.news-news-date {
+    font-size: 12px;
+    line-height: 18px;
+    color: #626469;
+}
+
+.news-title-news {
+    padding-bottom: 1px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3ea045;
+}
+
+.news-text-inside {
+    font-size: 13px;
+    line-height: 18px;
+    color: #6a757c;
+    /* padding: 21px 15px 17px 0; */
+    /* color: #626469; */
+}
+
+.news-text-link {
+    word-break: break-all;
+}
+.news-text-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3ea045;
+}
+
+.clearer {
+    clear: both;
+}
+
+.news-box-news a:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+/* _____ */
+
+.bottom-blocks-outer {
+    width: 100%;
+    background-color: #e8e8e8;
+    height: 339px;
+    position: relative;
+}
+
+.bottom-blocks-outer-top {
+    width: 100%;
+    height: 19px;
+    position: absolute;
+    top: 0;
+    background: url('https://www.pashabank.az/templates/images/bottom_blocks_top_detail.gif') top center no-repeat;
+    margin: 0 auto;
+}
+
+.bottom-blocks {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.bottom-blocks-instance {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: 269px;
+    background: url('https://www.pashabank.az/templates/images/control_panel_bg.jpg') top center no-repeat #49b751;
+    position: relative;
+}
+
+.bottom-blocks-instance-icon {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-blocks-instance h3 {
+    font-size: 19px;
+    line-height: 20px;
+    color: #fff;
+    /* padding: 1px 0 10px 0; */
+    text-align: center;
+    font-weight: normal;
+}
+
+.bottom-blocks-instance-inner {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    /* border: #808487 1px solid; */
+    position: relative;
+    padding: 0 30px;
+    margin: 16px 0 0 0;
+    min-height: 72px;
+}
+
+.bottom-blocks-instance-more {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.bottom-blocks-instance-more a {
+    width: 189px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8px;
+    display: block;
+    background-color: #fff;
+    border-bottom: 2px solid #007d57;
+    color: #3ea045;
+    text-decoration: none;
+}
+
+.bottom-blocks-instance-more a:hover{
+    background-color: #0E7D58;
+    color: #fff;
+}
+
+.no-margin {
+    margin-right: 0 !important;
+}
+
+/* _____ */
+
+.rightblock-arrow {
+    background: url('https://www.pashabank.az/templates/images/pb-sprites.png') center -44px no-repeat;
+    position: absolute;
+    top: 0;
+    height: 17px;
+    width: 218px;
+}
+
+.card-text a{
+    color: #49b751;
+    text-decoration: none;
+}
+
+.card-text a:hover{
+    color: #0E7D58;
+}
+
+.a2{
+    color: #49b751;
+    text-decoration: none;
+}
+
+.a2:hover{
+    color: #0E7D58;
+}
+
+.rates-right-block {
+    background: url('https://www.pashabank.az/templates/images/bg_ritghblock_rates.gif') top center no-repeat;
+    border-top: 1px solid #0a4c13 !important;
+}
+.rightblock {
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d3;
+    border-top: 1px solid #007d57;
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+}
+
+.rates-right-block .rightblock-arrow {
+    background: url('https://www.pashabank.az/templates/images/pb-sprites.png') center -482px no-repeat !important;
+}
+
+.rates-right-block h2 {
+    /* background-color: #007d57; */
+    color: #fff;
+    padding: 14px 15px;
+}
+
+.rates-right-block h3 {
+    color: #626469;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 16px 15px 0 15px;
+}
+
+.exchange-table {
+    width: 188px;
+    margin-left: 15px;
+    color: #626469;
+}
+
+.exchange-table .th{
+    text-align: right;
+    width: 66px;
+    padding-right: 40px;
+}
+
+.exchange-table .th2{
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.exchange-table td{
+    width: 33% !important;
+    padding: 0;
+    text-align: left;
+}

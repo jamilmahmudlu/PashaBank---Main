@@ -1,0 +1,138 @@
+{% extends "header.html" %}
+{% block header %}
+
+<div style="background-color: #C70B30;">
+    <div class="esas">Siz hazırda buradasınız / <a href="/main" style="color: #fff; text-decoration: none;">Əsas</a> /
+        <a href="/news" style="color: #fff; text-decoration: none;">Xəbərlər</a> / Bülleten
+    </div>
+</div>
+<div class="container press_container mt-3">
+    <div class="row">
+        <div class="col-8">
+            <h1 style="font-size: 1.5rem; font-weight: normal;">Bülleten</h1>
+            <br>
+            {% for bullet in bulleten %}
+            {% if bullet.press_id == ind %}
+            <div class="news-all-news">
+                <div class="news-box-news">
+                    <a href="/bulleten-detail/{{bullet.id}}" title="" class="new-news-box-link"
+                        style="text-decoration: none;">
+                        <div class="news-news-number">{{bullet.id}}</div>
+                        <div class="news-news-txt news-no-img">
+                            <div class="news-date-title">
+                                <div class="news-news-date">{{bullet.date}}</div>
+                                <h2 class="news-title-news">{{bullet.title}}
+                                </h2>
+                            </div>
+                            <div class="news-text-inside" maxlength="10">
+                                <p>{{bullet.description}}</p>
+                            </div>
+                        </div>
+                        <div class="clearer"></div>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            <div>
+                {% for i in range(bulleten| length) %}
+                {% if bulleten[i].bulleten_id!=bulleten[i-1].bulleten %}
+                <a class="pagination_numbers" href="/bulleten/{{bulleten[i].bulleten}}">{{bulleten[i].bulleten_id}}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-4">
+            <div>
+                <aside id="rightBlocks">
+                    <div class="rightblock">
+                        <div class="rightblock-arrow"></div>
+                        <div class="news">
+                            <a href="/press-detail/1" title="Last news">
+                                <h2>{{lastpress.title}}</h2>
+                            </a>
+                            <div>
+
+                                <p>{{lastpress.description|truncate(255)}}
+                                    <a href="/press-detail/1" title="ətraflı">Daha
+                                        ətraflı</a>
+                                </p>
+                                <div class="clearer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightblock">
+                        <div class="rightblock-arrow"></div>
+                        <div class="rightBoxKr">
+                            <h2>Baş ofis ilə əlaqə</h2>Yusif Məmmədəliyev küç. 13<br> Bakı, AZ1005, Azərbaycan <br>
+                            <br>
+                            T: (+994 12) 496 50 00<br> F: (+994 12) 496 50 10<br> E: <a
+                                href="mailto:office@pashabank.az">office@pashabank.az</a> <br> <br> <a
+                                href="https://www.pashabank.az/contacts,735/lang,az/" class="button-link">Daha
+                                ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="rightblock rates-right-block">
+                        <div class="rightblock-arrow"></div>
+                        <h2>Valyuta Məzənnələri<br>{{currency_data['ValCurs']['@Date']}}</h2>
+                        <div class="rates-right-block-inner">
+                            <h3>Nağd əməliyyatlar uzrə məzənnələr</h3>
+                            <table class="currency_top_right" cellspacing="0" cellpadding="0" id="currency_prices"
+                                title="" summary="">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" class="Sr2">Alış</th>
+                                        <th class="Sr">Satış</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['Value']}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+</div>
+
+<script>
+
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+{% endblock %}
+</body>
+
+</html>

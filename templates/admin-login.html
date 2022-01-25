@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Admin-Panel</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="../static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="../static/css/admin-login.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="/admin/login" method="POST">
+					<h3>Go to the admin panel</h3>
+					<p>To enter information into the database from the admin panel, please enter your superuser name and password</p>
+					<label class="form-group">
+						<input type="text" class="form-control" name="username" required>
+						<span>Superuser name</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="password" class="form-control" name="password" required>
+						<span for="">Password</span>
+						<span class="border"></span>
+					</label>
+					<button>Admin-Panel<i class="zmdi zmdi-arrow-right"></i></button>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

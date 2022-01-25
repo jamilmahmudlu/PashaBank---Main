@@ -1,0 +1,245 @@
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 350px;
+}
+
+body{
+    margin: 0 0 0 0;
+}
+
+.search_container {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* _____ */
+
+.axtarish-neticesi{
+    height: 150px;
+    background: url('https://www.pashabank.az/templates/images/search_results_bg.gif') left center no-repeat;
+}
+
+.axtarish-melumati{
+    margin-bottom: 17px;
+    padding: 13px 20px;
+}
+
+.axtarish-neticesi form{
+    padding: 0 20px;
+    position: relative;
+}
+
+
+
+.axtarish-neticesi form input.in-input {
+    width: 100%;
+}
+
+.in-input{
+    border: none;
+    padding: 11px 8px 15px;
+}
+
+.axtarish-neticesi .axtarish-butonu{
+    background: url('https://www.pashabank.az/templates/images/search_results_button.gif') no-repeat;
+    position: absolute;
+    right: 20px;
+    bottom: 4px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    /* cursor: pointer; */
+}
+
+/* _____ */
+
+
+
+
+.her-xeber {
+    position: relative;
+    border-top: 1px dotted #e9e9e9;
+}
+
+
+a.xeber-daxili {
+    display: block;
+    padding: 0 0 30px 30px;
+}
+
+.xeber-nomresi {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #3ea045;
+}
+/* 
+.news-text-link {
+    word-break: break-all;
+}
+.news-text-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3ea045;
+} */
+
+
+.her-xeber a:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+/* _____ */
+
+.ashagi-kartlar {
+    /* width: 100%; */
+    background-color: #e8e8e8;
+    height: 350px;
+    position: relative;
+}
+
+.ust-serhed {
+    width: 100%;
+    height: 19px;
+    /* position: absolute; */
+    /* top: 0; */
+    background: url('https://www.pashabank.az/templates/images/bottom_blocks_top_detail.gif') top center no-repeat;
+    /* margin: 0 auto; */
+}
+
+.kart-erazi {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.her-kart {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: 269px;
+    background: url('https://www.pashabank.az/templates/images/control_panel_bg.jpg') top center no-repeat #49b751;
+    position: relative;
+}
+
+.kart-icon {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.her-kart h3 {
+    font-size: 19px;
+    line-height: 20px;
+    color: #fff;
+    /* padding: 1px 0 10px 0; */
+    text-align: center;
+    font-weight: normal;
+}
+
+.kart-melumatlari {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    /* position: relative; */
+    padding: 0 30px;
+    height: 100px;
+}
+
+.ashagi-kartlar-button a {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8px;
+    display: block;
+    background-color: #fff;
+    border-bottom: 3px solid #007d57;
+    color: #3ea045;
+    text-decoration: none;
+}
+
+.ashagi-kartlar-button a:hover{
+    background-color: #0E7D58;
+    color: #fff;
+}
+
+.kenar {
+    margin-right: 0 !important;
+}
+
+/* _____ */
+
+.ust-xett {
+    background: url('https://www.pashabank.az/templates/images/pb-sprites.png') center -44px no-repeat;
+    position: absolute;
+    /* top: 0; */
+    height: 17px;
+    width: 218px;
+}
+
+.card-text a{
+    color: #49b751;
+    text-decoration: none;
+}
+
+.card-text a:hover{
+    color: #0E7D58;
+}
+
+.a2{
+    color: #49b751;
+    text-decoration: none;
+}
+
+.a2:hover{
+    color: #0E7D58;
+}
+
+.mezenne-kart {
+    background: url('https://www.pashabank.az/templates/images/bg_ritghblock_rates.gif') top center no-repeat;
+    border-top: 1px solid #0a4c13 !important;
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d3;
+    font-size: 13px;
+}
+
+
+.mezenne-kart .ust-xett {
+    background: url('https://www.pashabank.az/templates/images/pb-sprites.png') center -482px no-repeat ;
+}
+
+.mezenne-kart h2 {
+    color: #fff;
+    padding: 14px 15px;
+}
+
+.mezenne-kart h3 {
+    color: #626469;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.mezenne-cedvel {
+    width: 188px;
+    margin-left: 15px;
+    color: #626469;
+}
+
+.mezenne-cedvel .th{
+    text-align: right;
+    padding-right: 40px;
+}
+
+.mezenne-cedvel td{
+    width: 33% !important;
+}
+
+

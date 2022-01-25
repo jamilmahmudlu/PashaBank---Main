@@ -1,0 +1,186 @@
+{% extends "header.html" %}
+{% block header %}
+
+<div style="background-color: #C70B30;">
+    <div class="esas">Siz hazırda buradasınız / <a href="/main" style="color: #fff; text-decoration: none;"> Əsas </a> /
+        Axtarış nəticələri</div>
+</div>
+<div class="container search_container mt-3">
+    <div class="row">
+        <div class="col-8">
+            <h1 style="font-size: 1.5rem; font-weight: normal;">Axtarış nəticələri</h1>
+            <br>
+            <div class="axtarish-neticesi">
+                <div class="axtarish-melumati">
+                    {% if keyword %}
+                    <strong>{{keyword}}</strong> sorğunuza görə <strong id="uzunluq"></strong> məqalə tapılıb :
+                    {% endif %}
+                </div>
+                <form action="{{url_for('search')}}" method="POST">
+                    <input type="text" name="search" placeholder="Yeni axtarış" class="in-input" minlength="3"
+                        maxlength="30">
+                    <input type="submit" name="submit" value="" class="axtarish-butonu">
+                </form>
+            </div>
+            {% for pre in press %}
+            <div class="butun-xeberler" style="padding-top: 25px;">
+                <div class="her-xeber">
+                    <a href="/press-detail/{{pre.id}}" title="" class="xeber-daxili"
+                        style="text-decoration: none; padding-right: 30px;">
+                        <div class="xeber-nomresi">{{pre.id}}</div>
+                        <div style="padding-top: 15px; padding-left: 24px;">
+                            <h2 style="font-size: 13px; line-height: 18px; color: #3ea045;">{{pre.title}}</h2>
+                            <div style="font-size: 13px; line-height: 18px; color: #6a757c;" maxlength="10">
+                                <p>{{pre.description}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+            <div>
+                <!-- {% for i in range(press| length) %}
+                       {% if press[i].press_id!=press[i-1].press_id %}
+                       <a class="pagination_numbers" href="/press/{{press[i].press_id}}">{{press[i].press_id}}</a>
+                       {% endif %}
+                       {% endfor %} -->
+
+            </div>
+            <!-- <nav aria-label="..." style="margin-top: 20px;">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav> -->
+        </div>
+
+
+        <div class="col-4">
+            <div>
+                <aside id="rightBlocks">
+                    <div class="rightblock">
+                        <div class="rightblock-arrow"></div>
+                        <div class="news">
+                            <a href="/press-detail/1" title="Last news">
+                                <h2>{{lastpress.title}}</h2>
+                            </a>
+                            <div>
+
+                                <p>{{lastpress.description|truncate(255)}}
+                                    <a href="/press-detail/1" title="ətraflı">Daha
+                                        ətraflı</a>
+                                </p>
+                                <div class="clearer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightblock">
+                        <div class="rightblock-arrow"></div>
+                        <div class="rightBoxKr">
+                            <h2>Baş ofis ilə əlaqə</h2>Yusif Məmmədəliyev küç. 13<br> Bakı, AZ1005, Azərbaycan <br>
+                            <br>
+                            T: (+994 12) 496 50 00<br> F: (+994 12) 496 50 10<br> E: <a
+                                href="mailto:office@pashabank.az">office@pashabank.az</a> <br> <br> <a
+                                href="https://www.pashabank.az/contacts,735/lang,az/" class="button-link">Daha
+                                ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="rightblock rates-right-block">
+                        <div class="rightblock-arrow"></div>
+                        <h2>Valyuta Məzənnələri<br>{{currency_data['ValCurs']['@Date']}}</h2>
+                        <div class="rates-right-block-inner">
+                            <h3>Nağd əməliyyatlar uzrə məzənnələr</h3>
+                            <table class="currency_top_right" cellspacing="0" cellpadding="0" id="currency_prices"
+                                title="" summary="">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" class="Sr2">Alış</th>
+                                        <th class="Sr">Satış</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['Value']}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="currency">{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['@Code']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['Value']}}</td>
+                                        <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['Value']}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+<div class="ashagi-kartlar">
+    <div class="ust-serhed"></div>
+    <div class="kart-erazi">
+        <div class="her-kart">
+            <div class="kart-icon"><img
+                    src="https://www.pashabank.az/uploads/category/thumbs/from_a_v_1_06_1414151463.png" alt=""></div>
+            <h3>Onlayn xidmətlər</h3>
+            <div class="kart-melumatlari">Bank hesabına köçürmələr, İnternet ödəmələr və İnternet-Bank xidməti
+            </div>
+            <div class="ashagi-kartlar-button" style="font-size: 13px;"><a
+                    href="https://www.pashabank.az/online_services/lang,az/">Daha ətraflı</a></div>
+        </div>
+        <div class="her-kart">
+            <div class="kart-icon"><img
+                    src="https://www.pashabank.az/uploads/category/thumbs/from_home_a_v_1_02_1414151463.png" alt="">
+            </div>
+            <h3>Private Banking</h3>
+            <div class="kart-melumatlari">Yüksək gəlirli fərdi müştərilərə maliyyə və qeyri-maliyyə xidmətləri. <br>
+                &nbsp;
+            </div>
+            <div class="ashagi-kartlar-button" style="font-size: 13px;"><a
+                    href="https://www.pashabank.az/private_banking/lang,az/">Daha ətraflı</a></div>
+        </div>
+        <div class="her-kart kenar">
+            <div class="kart-icon"><img
+                    src="https://www.pashabank.az/uploads/category/thumbs/from_corp_news_and_sights_a_v_1_03.png"
+                    alt=""></div>
+            <h3>Ödəniş kartların təhlükəsizliyi</h3>
+            <div class="kart-melumatlari">
+            </div>
+            <div class="ashagi-kartlar-button" style="font-size: 13px;"><a
+                    href="https://www.pashabank.az/static,96/lang,az/" title="">Daha ətraflı</a></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+<script>
+    var uzunluq = document.getElementById('uzunluq')
+    var butun_xeberler = document.getElementsByClassName('butun-xeberler')
+    uzunluq.innerText = butun_xeberler.length
+</script>
+
+{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 350px;
+}
+
+.new_queue_container {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #57B851;
+    border-radius: 30px;
+    height: 220px;
+}
+
+.new_queue{
+    font-style: italic;
+    color: rgb(32, 32, 190);
+}
+
+.online_title{
+    font-size: xx-large;
+}
+
+.form-group{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.btn-outline-success{
+    width: 150px;
+}
+
+.right-side-queue{
+    /* margin-top: 20px; */
+    width: w-100;
+    height: 360px;
+    background-image: url("../images/pasha_logo_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.tesdiq{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.btn-primary{
+    width: 130px;
+    /* height: 30px; */
+    font-size:large;
+}
+
+/* th.ui-datepicker-week-end,
+td.ui-datepicker-week-end {
+    display: none;
+} */
+
+.message_view{
+    color: blue !important;
+    font-size: 25px;
+}

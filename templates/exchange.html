@@ -1,0 +1,108 @@
+{% extends "header.html" %}
+{% block header %}
+
+<div style="background-color: #C70B30;">
+    <div class="esas">Siz hazırda buradasınız / <a href="/main" style="color: #fff; text-decoration: none;"> Əsas </a> / Valyuta məzənnələri</div>
+</div><br>
+<div class="container exchange_container">
+    <h1 style="font-size: 1.5rem; font-weight: normal;">Valyuta məzənnələri</h1><br>
+    <div>
+        <label for="date" style="font-size: 16px; position: relative; margin-right: 10px;">Tarix seçin</label>
+        <form action="" method="POST">
+            <input type="date" name="picked_data" id="datetime" style="border-radius: 0; border: 1px solid; width: 200px;">
+            <input type="submit" value="Təsdiq edin">
+        </form>
+    </div>
+    <div style="font-size: 18px; margin: 16px 0;">{{currency_data['ValCurs']['@Date']}} tarixi üçün valyuta məzənnəsi
+    </div>
+    <h2 style="font-size: 16px; font-weight: normal;">Məzənnələr</h2>
+    <table class="table" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <th colspan="2" style="font-weight: normal;" class="th">Alış</th>
+                <th style="font-weight: normal;" class="th2">Satış</th>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][0]['Value']}}</td>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][1]['Value']}}</td>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][16]['Value']}}</td>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][34]['Value']}}</td>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][20]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][20]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][20]['Value']}}</td>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][38]['Value']}}</td>
+            </tr>
+            <tr>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][6]['@Code']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][6]['Value']}}</td>
+                <td>{{currency_data['ValCurs']['ValType'][1]['Valute'][6]['Value']}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- <h2 style="font-size: 16px; font-weight: normal;">Nağd əməliyyatlar uzrə məzənnələr</h2>
+        <table class="table" cellspacing = "0" cellpadding = "0">
+            <tbody>
+                <tr>
+                    <th colspan="2" style="font-weight: normal;" class="th">Alış</th>
+                    <th style="font-weight: normal;" class="th2">Satış</th>
+                </tr>
+                <tr>
+                    <td>USD</td>
+                    <td>1.6970</td>
+                    <td>1.7020</td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td>1.9700</td>
+                    <td>2.0230</td>
+                </tr>
+                <tr>
+                    <td>GBP</td>
+                    <td>2.3290</td>
+                    <td>2.3800</td>
+                </tr>
+                <tr>
+                    <td>RUB</td>
+                    <td>0.0203</td>
+                    <td>0.0232</td>
+                </tr>
+                <tr>
+                    <td>TRY</td>
+                    <td>0.1650</td>
+                    <td>0.2270</td>
+                </tr>
+            </tbody>
+        </table>
+        <br> -->
+</div>
+<script>
+    var today = new Date().toISOString().split("T")[0];
+    document.getElementById("datetime").setAttribute("max", today);
+
+</script>
+
+{% endblock %}
+</body>
+
+</html>

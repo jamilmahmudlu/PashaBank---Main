@@ -1,0 +1,70 @@
+.button_main_mp {
+    width: 100%;
+    height: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    line-height: 28px;
+    font-size: 24px;
+    margin: 7px;
+    position: relative;
+    height: 90px!important;
+}
+
+.bg_green {
+    background-color: #57B851;
+}
+.border-radius {
+    border-radius: 5px!important;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.c-white{
+    text-decoration: none;
+    color: white;
+}
+
+.content_content_header{
+    color: #165c12;
+}
+
+.esas {
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-left: 350px;
+}
+
+.content_content_title{
+    font-size: xx-large;
+    background-color: white;
+}
+
+.content_content_subtitle{
+    font-size: x-large;
+    background-color: white;
+    font-style: italic;
+}
+
+.background-img{
+    width: w-100;
+    height: 370px;
+    background-image: url("https://www.pashabank.az/uploads/category/online_services_hero_image_2019_03.jpg");
+}
+
+.position-relative{
+    width: w-100;
+    height: 150px;
+    background-image: url("https://www.pashabank.az/templates/images/news-site-link__bg.webp");
+}
+
+.button_main_mp:hover{
+    color: blue;
+}
+
+
