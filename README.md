@@ -1,1 +1,1 @@
-# pashabank-project-lambda-group
+Pasha Bank (Course Project)
